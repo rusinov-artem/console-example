@@ -17,13 +17,10 @@ class DebugCommandTest extends TestCase
         $command->run($inp, $out);
         $expected = <<<TEXT
         Called command: debug
-        Entry point: ./run
         Arguments:
           No arguments passed
-        
         Options:
           No options passed
-        
         
         TEXT;
 
@@ -38,13 +35,11 @@ class DebugCommandTest extends TestCase
         $command->run($inp, $out);
         $expected = <<<TEXT
         Called command: debug
-        Entry point: ./run
         Arguments:
           -  arg1
         Options:
           No options passed
-        
-        
+
         TEXT;
 
         self::assertEquals($expected, $out->stdout);
@@ -58,14 +53,12 @@ class DebugCommandTest extends TestCase
         $command->run($inp, $out);
         $expected = <<<TEXT
         Called command: debug
-        Entry point: ./run
         Arguments:
           -  arg1
           -  arg2
         Options:
           No options passed
-        
-        
+
         TEXT;
 
         self::assertEquals($expected, $out->stdout);
@@ -79,10 +72,8 @@ class DebugCommandTest extends TestCase
         $command->run($inp, $out);
         $expected = <<<TEXT
         Called command: debug
-        Entry point: ./run
         Arguments:
           No arguments passed
-        
         Options:
           -  name:
             -  Artem

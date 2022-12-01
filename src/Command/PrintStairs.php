@@ -41,9 +41,11 @@ class PrintStairs extends Command
             $this->end = $inp->parameters->first('end');
         }
 
+        $this->currentValue = $this->begin;
+
         $this->pad = strlen((string)$this->end);
 
-        $line = 0;
+        $line = 1;
         while ($this->currentValue <= $this->end) {
             $this->printLine($line++, $out);
         }

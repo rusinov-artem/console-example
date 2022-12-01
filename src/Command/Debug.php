@@ -25,7 +25,6 @@ class Debug extends Command
     public function run(Input $inp, Output $out): int
     {
         $out->out("Called command: $inp->commandName\n");
-        $out->out("Entry point: $inp->entryPoint\n");
         $this->showArguments($inp, $out);
         $this->showParameters($inp, $out);
         return 0;
@@ -36,7 +35,7 @@ class Debug extends Command
         $out->out("Arguments:\n");
         $list = $inp->arguments->getList();
         if (empty($list)) {
-            $out->out("  No arguments passed\n\n");
+            $out->out("  No arguments passed\n");
             return;
         }
 
@@ -50,7 +49,7 @@ class Debug extends Command
         $out->out("Options:\n");
         $list = $inp->parameters->toArray();
         if (empty($list)) {
-            $out->out("  No options passed\n\n");
+            $out->out("  No options passed\n");
             return;
         }
 
