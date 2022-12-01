@@ -1,0 +1,4 @@
+#!/bin/bash
+. configure
+docker run -it --rm -v ${PWD}:/var/www --workdir=/var/www/bin test/php8.1  php run "$@"
+

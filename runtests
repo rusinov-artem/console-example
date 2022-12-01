@@ -1,0 +1,3 @@
+#!/bin/bash
+. configure
+docker run  --rm -v ${PWD}:/var/www test/php8.1 php vendor/bin/phpunit --configuration=phpunit.xml

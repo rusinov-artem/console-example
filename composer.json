@@ -1,0 +1,28 @@
+{
+    "name": "rusinov-artem/console-app-example",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RusinovArtem\\ConsoleAppExample\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RusinovArtem\\ConsoleAppExample\\Test\\": "test/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RusinovArtem",
+            "email": "rusinov.dev@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "rusinov-artem/console": "^0.0"
+    }
+}
