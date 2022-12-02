@@ -1,14 +1,21 @@
 # Symple Console App
 
-If you have php >= 8.1 feel free to explore it by running
+If you have php >= 8.1 installed please fetch dependencies
 ```bash
-php bin/run 
+composer install
+```
+feel free to explore it by running
+```bash
+php bin/run
+# or 
+./bin/run 
 ```
 
 If you don't have php >= 8.1 installed but have docker just use
 ```bash
 ./run 
 ```
+
 
 Also, there is a shortcut for running tests
 ```bash
