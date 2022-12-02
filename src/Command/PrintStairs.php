@@ -9,7 +9,7 @@ use RusinovArtem\Console\Output;
 class PrintStairs extends Command
 {
     public int $begin = 0;
-    public int $end = 100;
+    public int $end = 104;
     public int $currentValue = 0;
     public int $pad;
 
